@@ -1,0 +1,135 @@
+:root{
+    --input-bg: #FAFAFF;
+    --border-color: #e1e1e3;
+    --text-color: #6E6676;
+    --btn-color: #FF2139;
+    --red-text: #E24351;
+    --heading-color: #38006A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.heading{
+    color: var(--heading-color);
+    font-size: 3rem;
+}
+.content{
+    padding: 2rem;
+    min-height: 80vh;
+}
+.content.form{
+    grid-column: 2 / 3;
+}
+.content.img.login{
+    grid-column: 1 / 2;
+    grid-row: 1/-1;
+}
+.content.img.login{
+    margin-left: 2rem;
+}
+.content.img.signup{
+    margin-left: -2rem;
+}
+.line{
+    height: .12rem;
+    width: 5rem;
+    background: var(--red-text);
+    margin-block: 1rem;
+    margin-right: 1rem;
+}
+.signup-with{
+    display: flex;
+    align-items: center;
+    color: var(--red-text);
+    font-size: small;
+    font-weight: bolder;
+}
+
+.form-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-gap: 1rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    margin-block: 2rem;
+}
+.msg-area{
+    grid-column: span 2;
+    color: white;
+    padding: .4rem;
+    background: rgb(226, 84, 84);
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+}
+.input-group input{
+    border: 1px solid var(--border-color);
+    background-color: var(--input-bg);
+    padding: .5rem 1rem;
+    border-radius: .5rem !important;
+    font-size: 1rem;
+}
+.input-group .pass{
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    background-color: var(--input-bg);
+    border-radius: .5rem !important;
+    padding-right: .5rem;
+}
+.pass input{
+    flex-grow: 1;
+    outline: none;
+    border: none;
+}
+.pass i{
+    cursor: pointer;
+}
+.pass i:hover{
+    color: black;
+}
+.input-group.add{
+    grid-column: span 2;
+}
+
+.input-group input:focus{
+    outline: none;
+}
+.form-group input[type="submit"]{
+    border: 1px solid var(--border-color);
+    padding: 1rem 2rem;
+    background-color: var(--btn-color);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    
+}
+.form-group input[type='submit']:hover{
+    background-color: var(--red-text);
+}
+.signin{
+    color: var(--text-color);
+}
+.content.img{
+    max-height: calc(100vh - 811px);
+    max-width: 100%;
+    overflow: hidden;
+}
+.content.img img{
+    width: 100%;
+    object-fit: contain;
+}

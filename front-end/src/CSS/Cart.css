@@ -1,0 +1,25 @@
+td{
+    vertical-align: middle;
+}
+
+.product-name{
+    display: inline-block;
+    margin-left: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+table{
+    width: 90% !important;
+    margin: 3rem auto;
+}
+
+.main-wrapper{
+    padding-inline: 1rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.row{
+    padding-block: .3rem  !important;
+}
